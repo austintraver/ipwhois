@@ -4,7 +4,7 @@ from setuptools import setup
 import io
 
 NAME = 'ipwhois'
-VERSION = '1.2.0'
+VERSION = '1.3.0'
 AUTHOR = 'Philip Hane'
 AUTHOR_EMAIL = 'secynic@gmail.com'
 DESCRIPTION = 'Retrieve and parse whois data for IPv4 and IPv6 addresses.'
@@ -67,7 +67,7 @@ PACKAGES = ['ipwhois']
 
 PACKAGE_DATA = {'ipwhois': ['data/*.xml', 'data/*.csv']}
 
-INSTALL_REQUIRES = ['dnspython<=2.0.0', 'ipaddr==2.2.0;python_version<"3.3"']
+INSTALL_REQUIRES = ['dnspython~=2.3.0']
 
 setup(
     name=NAME,
