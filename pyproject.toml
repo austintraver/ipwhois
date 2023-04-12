@@ -9,9 +9,15 @@ authors = [
 maintainers = [
     {name = "Austin Traver", email = "austintraver@gmail.com"},
 ]
-version = "1.3.0"
+version = "1.3.1"
 readme = "README.md"
 license = {file = "LICENSE.txt"}
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "dnspython ~= 2.3.0",
+]
+[project.optional-dependencies]
+dev = []
 
 [project.urls]
 homepage = "https://github.com/austintraver/ipwhois"
@@ -20,10 +26,6 @@ repository = "https://github.com/austintraver/ipwhois"
 #changelog = "https://github.com/austintraver/ipwhois/releases"
 
 # Reference:https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
-requires-python = ">=3.10,<3.12"
-dependencies = [
-    "dnspython ~= 2.3.0",
-]
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
